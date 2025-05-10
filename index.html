@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amasha Jagathsinghe - Aspiring Software Engineer</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Your Custom CSS (Load AFTER Libraries) -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="70">
+
+    <!-- ========== NAVBAR ========== -->
+    <nav id="navbar-main" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Amasha Jagathsinghe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ========== HOME (HERO) SECTION ========== -->
+        <section id="home" class="hero-section d-flex align-items-center text-center min-vh-100">
+            <div class="container" data-aos="fade-in" data-aos-delay="100">
+                <h1 class="display-3 fw-bold mb-3 text-white">Amasha Jagathsinghe</h1>
+                <p class="lead mb-4 text-white-50">Aspiring Software Engineer | Creative Problem Solver | Fast Learner</p>
+                <a href="#projects" class="btn btn-primary btn-lg me-2">View My Projects</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
+            </div>
+        </section>
+
+        <!-- ========== ABOUT SECTION ========== -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <!-- About Me Row -->
+                <div class="row align-items-center mb-5" data-aos="fade-up">
+                    <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+                        <img src="img/about.jpg" alt="Amasha Jagathsinghe" class="profile-pic img-fluid rounded-circle shadow">
+                         <!-- IMPORTANT: Replace with your photo path -->
+                    </div>
+                    <div class="col-lg-8">
+                        <h2 class="mb-3">About Me</h2>
+                        <p class="lead">
+                            I'm currently pursuing my Higher Diploma in Computing and Software Engineering from Cardiff Metropolitan University (via ICBT Campus), expecting to graduate in May 2025. I have a strong foundation in software development principles gained through my academic coursework and hands-on projects.
+                        </p>
+                        <p>
+                            I enjoy tackling challenges, working effectively within teams, and I'm a fast learner eager to adapt to new technologies and methodologies. My goal is to secure a software engineering internship where I can apply my skills, contribute meaningfully, and continue my professional growth in a practical setting. I'm particularly interested in full-stack web development and building efficient backend systems.
+                        </p>
+                    </div>
+                </div>
+
+                <hr class="my-5">
+
+                <!-- Education Row -->
+                <div class="mb-5" data-aos="fade-up">
+                    <h3 class="text-center mb-4">Education</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="education-item p-4 mb-4 bg-light shadow-sm rounded border-start border-primary border-4">
+                                 <h4 class="h5 mb-1">Higher Diploma in Computing & Software Engineering</h4>
+                                <p class="mb-1"><strong>Cardiff Metropolitan University - UK</strong> (via ICBT Campus, Sri Lanka)</p>
+                                <p class="text-muted mb-0"><em>Expected Graduation: May 2025</em></p>
+                            </div>
+                             <div class="education-item p-4 bg-light shadow-sm rounded border-start border-secondary border-4">
+                                 <h4 class="h5 mb-1">G.C.E. Advanced Level Examination</h4>
+                                <p class="mb-1"><strong>Sivali Central College, Ratnapura, Sri Lanka</strong></p>
+                                 <p class="text-muted mb-1"><em>Completed: 2022</em></p>
+                                <p class="small text-muted mb-0">Subjects: Combined Mathematics (C), Physics (C), Chemistry (C)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <hr class="my-5">
+
+                <!-- Skills Row -->
+                <div data-aos="fade-up">
+                    <h3 class="text-center mb-4">Technical Skills</h3>
+                     <div class="row gy-4">
+                        <!-- Languages --> 
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-category p-3 bg-white shadow-sm rounded h-100">
+                                <h4 class="h6 mb-3 text-primary fw-bold"><i class="fas fa-code me-2"></i>Languages</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fab fa-html5 fa-fw me-2 text-muted"></i> HTML</li>
+                                    <li class="mb-2"><i class="fab fa-css3-alt fa-fw me-2 text-muted"></i> CSS</li>
+                                    <li class="mb-2"><i class="fab fa-js-square fa-fw me-2 text-muted"></i> JavaScript</li>
+                                    <li class="mb-2"><i class="fab fa-php fa-fw me-2 text-muted"></i> PHP</li>
+                                    <li class="mb-2"><i class="fab fa-python fa-fw me-2 text-muted"></i> Python</li>
+                                    <li class="mb-2"><i class="fab fa-java fa-fw me-2 text-muted"></i> Kotlin</li>
+                                </ul>
+                            </div>
+                        </div>
+                         <!-- Frameworks/APIs --> 
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-category p-3 bg-white shadow-sm rounded h-100">
+                                <h4 class="h6 mb-3 text-primary fw-bold"><i class="fas fa-cogs me-2"></i>Frameworks / Libraries / APIs</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fab fa-python fa-fw me-2 text-muted"></i> Flask</li>
+                                    <li class="mb-2"><i class="fas fa-database fa-fw me-2 text-muted"></i> Flask-SQLAlchemy</li>
+                                    <li class="mb-2"><i class="fas fa-project-diagram fa-fw me-2 text-muted"></i> RESTful APIs</li>
+                                    <li class="mb-2"><i class="fab fa-firebase fa-fw me-2 text-muted"></i> Firebase Authentication</li>
+                                    <li class="mb-2"><i class="fas fa-retweet fa-fw me-2 text-muted"></i> AJAX</li>
+                                </ul>
+                            </div>
+                        </div>
+                         <!-- Databases --> 
+                         <div class="col-md-6 col-lg-4">
+                             <div class="skill-category p-3 bg-white shadow-sm rounded h-100">
+                                <h4 class="h6 mb-3 text-primary fw-bold"><i class="fas fa-database me-2"></i>Databases</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-database fa-fw me-2 text-muted"></i> MySQL</li>
+                                    <li class="mb-2"><i class="fas fa-database fa-fw me-2 text-muted"></i> SQLite</li>
+                                </ul>
+                            </div>
+                        </div>
+                         <!-- Tools & Platforms --> 
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-category p-3 bg-white shadow-sm rounded h-100">
+                                <h4 class="h6 mb-3 text-primary fw-bold"><i class="fas fa-tools me-2"></i>Tools & Platforms</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fab fa-git-alt fa-fw me-2 text-muted"></i> Git & GitHub</li>
+                                    <li class="mb-2"><i class="fab fa-windows fa-fw me-2 text-muted"></i> Windows</li>
+                                    <li class="mb-2"><i class="fab fa-android fa-fw me-2 text-muted"></i> Android (Development)</li>
+                                    <li class="mb-2"><i class="fas fa-server fa-fw me-2 text-muted"></i> WAMP Server</li>
+                                    <li class="mb-2"><i class="fas fa-code fa-fw me-2 text-muted"></i> VS Code / VS / NetBeans</li>
+                                    <li class="mb-2"><i class="fas fa-mobile-alt fa-fw me-2 text-muted"></i> Android Studio</li>
+                                    <li class="mb-2"><i class="fab fa-python fa-fw me-2 text-muted"></i> Jupyter Notebook</li>
+                                    <li class="mb-2"><i class="fab fa-figma fa-fw me-2 text-muted"></i> Figma</li>
+                                    <li class="mb-2"><i class="fas fa-palette fa-fw me-2 text-muted"></i> Canva</li>
+                                </ul>
+                            </div>
+                        </div>
+                          <!-- Concepts --> 
+                         <div class="col-md-6 col-lg-4">
+                             <div class="skill-category p-3 bg-white shadow-sm rounded h-100">
+                                <h4 class="h6 mb-3 text-primary fw-bold"><i class="fas fa-lightbulb me-2"></i>Concepts / Other</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-object-group fa-fw me-2 text-muted"></i> Object-Oriented Programming</li>
+                                    <li class="mb-2"><i class="fas fa-sitemap fa-fw me-2 text-muted"></i> Service-Oriented Architecture</li>
+                                    <li class="mb-2"><i class="fas fa-mobile-alt fa-fw me-2 text-muted"></i> Responsive Web Design</li>
+                                    <li class="mb-2"><i class="fas fa-laptop-code fa-fw me-2 text-muted"></i> Web Development</li>
+                                    <li class="mb-2"><i class="fas fa-file-code fa-fw me-2 text-muted"></i> JSON</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========== PROJECTS SECTION ========== -->
+        <section id="projects" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5" data-aos="fade-up">Projects</h2>
+                <div class="row row-cols-1 row-cols-lg-2 g-4">
+
+                    <!-- Project Teaser Card 1: Natura.lk -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-teaser card h-100 overflow-hidden shadow-sm" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="natura">
+                            <div class="row g-0">
+                                <div class="col-md-5 project-teaser-img-wrap">
+                                    <img src="img/natura-thumb.png" class="img-fluid project-teaser-img" alt="Natura Thumbnail">
+                                     <!-- IMPORTANT: Replace with your thumb path -->
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body d-flex flex-column h-100 p-3">
+                                        <h5 class="card-title mb-0">Natura.lk</h5>
+                                        <p class="card-text text-muted small">E-commerce Platform</p>
+                                        <div class="mt-auto ms-auto project-arrow">
+                                            <i class="fas fa-arrow-right text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Teaser Card 2: Gallery Cafe -->
+                     <div class="col" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-teaser card h-100 overflow-hidden shadow-sm" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="gallerycafe">
+                           <div class="row g-0">
+                                <div class="col-md-5 project-teaser-img-wrap">
+                                    <img src="img/gallerycafe-thumb.png" class="img-fluid project-teaser-img" alt="Gallery Cafe Thumbnail">
+                                     <!-- IMPORTANT: Replace with your thumb path -->
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body d-flex flex-column h-100 p-3">
+                                        <h5 class="card-title mb-0">Gallery Cafe</h5>
+                                        <p class="card-text text-muted small">Fictional Website</p>
+                                         <div class="mt-auto ms-auto project-arrow">
+                                            <i class="fas fa-arrow-right text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Teaser Card 3: TechFix -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-teaser card h-100 overflow-hidden shadow-sm" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="techfix">
+                             <div class="row g-0">
+                                <div class="col-md-5 project-teaser-img-wrap">
+                                    <img src="img/techfix-thumb.png" class="img-fluid project-teaser-img" alt="TechFix Thumbnail">
+                                     <!-- IMPORTANT: Replace with your thumb path -->
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body d-flex flex-column h-100 p-3">
+                                        <h5 class="card-title mb-0">TechFix</h5>
+                                        <p class="card-text text-muted small">SOA E-commerce Backend</p>
+                                         <div class="mt-auto ms-auto project-arrow">
+                                            <i class="fas fa-arrow-right text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Teaser Card 4: Dog Nutrition App -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-teaser card h-100 overflow-hidden shadow-sm" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="dogapp">
+                             <div class="row g-0">
+                                <div class="col-md-5 project-teaser-img-wrap">
+                                    <img src="img/dogapp-thumb.png" class="img-fluid project-teaser-img" alt="Dog Nutrition App Thumbnail">
+                                     <!-- IMPORTANT: Replace with your thumb path -->
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body d-flex flex-column h-100 p-3">
+                                        <h5 class="card-title mb-0">Dog Nutrition App</h5>
+                                        <p class="card-text text-muted small">Android Mobile App</p>
+                                         <div class="mt-auto ms-auto project-arrow">
+                                            <i class="fas fa-arrow-right text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Teaser Card 5: Your 5th Project -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
+                         <div class="project-teaser card h-100 overflow-hidden shadow-sm" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="project5">
+                             <div class="row g-0">
+                                <div class="col-md-5 project-teaser-img-wrap">
+                                    <img src="img/java-thumb.png" class="img-fluid project-teaser-img" alt="Project 5 Thumbnail">
+                                     <!-- IMPORTANT: Replace with your thumb path -->
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body d-flex flex-column h-100 p-3">
+                                        <h5 class="card-title mb-0">Employee Management System</h5> 
+                                        <p class="card-text text-muted small">Java Swing application</p> 
+                                         <div class="mt-auto ms-auto project-arrow">
+                                            <i class="fas fa-arrow-right text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT SECTION ========== -->
+        <section id="contact" class="py-5">
+            <div class="container text-center">
+                <h2 class="mb-4" data-aos="fade-up">Let's Connect</h2>
+                <p class="lead mb-4 mx-auto" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="100">
+                    I'm actively seeking Software Engineering internship opportunities starting around [Your Availability Date/Month, e.g., June 2025]. Feel free to reach out!
+                </p> 
+                <div class="contact-links" data-aos="fade-up" data-aos-delay="200">
+                    <a href="mailto:amashajagathsinghe@gmail.com" class="btn btn-outline-dark btn-lg contact-link mx-2 my-2"><i class="fas fa-envelope me-2"></i> Email</a>
+                    <a href="https://linkedin.com/in/amasha-jagathsinghe" target="_blank" class="btn btn-outline-primary btn-lg contact-link mx-2 my-2"><i class="fab fa-linkedin me-2"></i> LinkedIn</a>
+                     
+                    <a href="https://github.com/ama-23-ops" target="_blank" class="btn btn-outline-dark btn-lg contact-link mx-2 my-2"><i class="fab fa-github me-2"></i> GitHub</a>
+                     
+                     <br class="d-md-none">
+                    <span class="contact-link d-inline-block border rounded p-2 mx-2 my-2 bg-light shadow-sm"><i class="fas fa-phone me-2 text-secondary"></i> +94 76 888 2465</span>
+                    <span class="contact-link d-inline-block border rounded p-2 mx-2 my-2 bg-light shadow-sm"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> Rathmalana, Sri Lanka</span>
+                    <a href="Amasha_Jagathsinghe_CV.pdf" target="_blank" class="btn btn-outline-secondary btn-lg contact-link mx-2 my-2"><i class="fas fa-file-pdf me-2"></i> Download CV</a> 
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0 small">© <span id="year"></span> Amasha Jagathsinghe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ========== PROJECT MODAL ========== -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title" id="modalProjectTitle">Project Title</h5>
+                        <small class="text-muted" id="modalProjectSubtitle">Project Subtitle</small>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row mb-4 gy-4">
+                        <!-- Left Column: Details --> 
+                        <div class="col-lg-7" id="modalProjectDetails">
+                            <div class="mb-3">
+                                <h6 class="text-primary fw-bold">Description</h6>
+                                <p data-field="description">Loading project description...</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-primary fw-bold">Technologies Used</h6>
+                                <p data-field="tech">Loading technologies...</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-primary fw-bold">My Role</h6>
+                                <p data-field="role">Loading role details...</p>
+                            </div>
+                            <div>
+                                <h6 class="text-primary fw-bold">Key Modules / Learning</h6>
+                                <p data-field="modules">Loading module details...</p>
+                            </div>
+                             <div class="mt-4">
+                                 <h6 class="text-primary fw-bold">Links</h6>
+                                 <div id="modalProjectLinks">
+                                     <!-- Links injected by JS --> 
+                                     <span class="text-muted">No links available.</span>
+                                 </div>
+                            </div>
+                        </div>
+                         <!-- Right Column: Main Image --> 
+                        <div class="col-lg-5 align-self-start"> 
+                             <img src="img/default-placeholder.png" class="img-fluid rounded shadow-sm" id="modalProjectImage" alt="Project Main Image">
+                              
+                        </div>
+                    </div>
+                    <hr>
+                    <h5 class="mb-3">Project Gallery</h5>
+                    <div class="row row-cols-2 row-cols-md-3 g-3" id="modalProjectGallery">
+                        <!-- Gallery items will be injected here by JS --> 
+                         <div class="col"><p class="text-muted">Gallery loading...</p></div>
+                    </div>
+                </div>
+                 <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Your Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

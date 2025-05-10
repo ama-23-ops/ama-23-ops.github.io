@@ -1,0 +1,198 @@
+/* === BASE & TYPOGRAPHY === */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px; /* Match navbar height approx */
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #444;
+    line-height: 1.7;
+    display: flex; /* Added for sticky footer */
+    flex-direction: column; /* Added for sticky footer */
+    min-height: 100vh; /* Added for sticky footer */
+}
+
+main {
+    flex-grow: 1; /* Added for sticky footer */
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #333;
+}
+
+.lead {
+    font-weight: 400;
+}
+
+/* === NAVBAR === */
+.navbar {
+    transition: background-color 0.3s ease;
+}
+.navbar-brand {
+    font-size: 1.4rem;
+}
+.nav-link {
+    padding: 0.8rem 1rem !important;
+    transition: color 0.3s ease;
+}
+.nav-link:hover,
+.nav-link.active {
+    color: var(--bs-primary) !important;
+}
+
+/* === HERO SECTION === */
+.hero-section {
+    /* IMPORTANT: Replace with your image path */
+    background: linear-gradient(rgba(41, 41, 41, 0.8), rgba(41, 41, 41, 0.8)), url('../img/Black Blue Pink Technology Geometric Desktop Wallpaper.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Creates parallax effect */
+    padding-top: 70px; /* Offset for navbar */
+    color: #fff;
+}
+
+.hero-section h1 {
+    color: #fff;
+}
+
+/* === ABOUT SECTION === */
+.profile-pic {
+    max-width: 250px; /* Adjust size */
+    border: 7px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.education-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.education-item:hover {
+    transform: translateY(-3px);
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+.skill-category ul li i {
+    width: 18px; /* Alignment */
+}
+
+/* === PROJECTS SECTION === */
+.project-teaser {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none; /* Remove default card border if desired */
+}
+
+.project-teaser:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+.project-teaser-img-wrap {
+    height: 200px; /* Consistent height for image area */
+    overflow: hidden;
+}
+
+.project-teaser-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.project-teaser:hover .project-teaser-img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.project-arrow {
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+.project-teaser:hover .project-arrow {
+     opacity: 1;
+}
+
+/* Responsive Project Teaser Card */
+@media (max-width: 767.98px) {
+    .project-teaser .row > div { /* Target direct children columns */
+        width: 100%; /* Stack columns */
+    }
+     .project-teaser-img-wrap {
+        height: 180px; /* Adjust height for mobile */
+    }
+    .project-teaser .card-body {
+        min-height: 120px; /* Ensure some min height for text */
+    }
+}
+
+
+/* === CONTACT SECTION === */
+.contact-link {
+    vertical-align: middle;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+.contact-link i {
+    /* Color applied via text-secondary or btn class */
+    vertical-align: middle;
+}
+.contact-link.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* === MODAL === */
+#projectModal .modal-dialog {
+    max-width: 900px; /* Control max width */
+}
+
+#modalProjectDetails h6 {
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.5px;
+}
+#modalProjectDetails p {
+    color: #555;
+    margin-bottom: 1rem; /* Space between detail sections */
+    font-size: 0.95rem;
+}
+
+#modalProjectGallery .figure {
+    background-color: #f8f9fa;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem; /* Override default figure margin */
+    transition: box-shadow 0.3s ease;
+}
+#modalProjectGallery .figure:hover {
+     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#modalProjectGallery .figure-img {
+    margin-bottom: 0.5rem !important; /* Adjust spacing */
+}
+#modalProjectGallery .figure-caption {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+#modalProjectLinks a {
+    margin-right: 15px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+
+/* === UTILITIES /OVERRIDES === */
+.text-primary {
+    color: #0d6efd !important; /* Ensure overrides if needed */
+}
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* Optional: Fancier hr */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+}
